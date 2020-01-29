@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black2</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textSize">9.3sp</item>
+    </style>
+
+    <style name="NavigationDrawerStyle" parent="Widget.Design.NavigationView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black2</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="medium_semi_bold_text">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="regular_text">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="edt_label_grey">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/warm_grey</item>
+        <item name="android:textSize">@dimen/tiny_text</item>
+    </style>
+
+    <style name="regular_black_txt">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
+    <style name="black_btn">
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/btn_text</item>
+        <item name="android:background">@drawable/selector_btn_black</item>
+    </style>
+
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/warm_grey</item>
+        <item name="colorControlNormal">@color/separator</item>
+        <item name="colorControlActivated">@color/warm_grey</item>
+        <item name="colorControlHighlight">@color/black</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+
+    <style name="order_size_color">
+        <item name="android:text">"Size: L | Color: Black"</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/brownish_grey</item>
+        <item name="android:textSize">10.5sp</item>
+    </style>
+
+    <style name="ThemeDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_to_bottom</item>
+    </style>
+</resources>

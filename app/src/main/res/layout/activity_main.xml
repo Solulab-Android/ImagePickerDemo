@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSingleImage"
+            style="@style/black_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/pick_single_image"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMultipleImage"
+            style="@style/black_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/pick_multiple_images"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="100dp" />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnVideo"-->
+<!--            style="@style/black_btn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="@string/pick_video"-->
+<!--            android:textAllCaps="false"-->
+<!--            app:backgroundTint="@color/black"-->
+<!--            app:cornerRadius="100dp" />-->
+    </LinearLayout>
+</layout>
