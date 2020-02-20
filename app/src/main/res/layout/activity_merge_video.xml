@@ -11,37 +11,27 @@
         tools:context=".MainActivity">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSingleImage"
+            android:id="@+id/btnSelectVideo"
             style="@style/black_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/pick_single_image"
+            android:text="@string/select_video"
             android:textAllCaps="false"
             app:backgroundTint="@color/black"
             app:cornerRadius="100dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnMultipleImage"
-            style="@style/black_btn"
+        <TextView
+            android:id="@+id/tvVideoPathOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/pick_multiple_images"
-            android:textAllCaps="false"
-            app:backgroundTint="@color/black"
-            app:cornerRadius="100dp" />
+            android:layout_margin="10dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnVideo"
-            style="@style/black_btn"
+        <TextView
+            android:id="@+id/tvVideoPathTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/trim_video"
-            android:textAllCaps="false"
-            app:backgroundTint="@color/black"
-            app:cornerRadius="100dp" />
+            android:layout_margin="10dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMergeVideo"
@@ -53,5 +43,25 @@
             android:textAllCaps="false"
             app:backgroundTint="@color/black"
             app:cornerRadius="100dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
     </LinearLayout>
 </layout>
